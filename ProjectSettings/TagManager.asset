@@ -3,12 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Ironbed
+  - Star
+  - PlayerSpawn
+  - Character
+  - FxTemporaire
+  - StageManager
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - balloon
   - Water
   - UI
   - 
