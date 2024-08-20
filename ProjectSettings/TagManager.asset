@@ -11,6 +11,7 @@ TagManager:
   - Character
   - FxTemporaire
   - StageManager
+  - Fruit
   layers:
   - Default
   - TransparentFX
