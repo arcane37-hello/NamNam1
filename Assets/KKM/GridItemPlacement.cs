@@ -5,6 +5,7 @@ public class GridItemPlacement : MonoBehaviour
     public GameObject[] itemPrefabs; // 아이템 프리팹 배열 (랜덤 선택될 아이템들)
     public int gridSize = 3;         // 그리드 크기 (3x3)
     public float spacing = 2.0f;     // 아이템 간의 간격
+    public float zOffset = -5.0f;    // 카메라와의 거리 (Z축 위치 조정)
 
     private int currentIndex = 0;    // 현재 배치될 그리드의 인덱스
 
@@ -28,8 +29,8 @@ public class GridItemPlacement : MonoBehaviour
             int column = currentIndex / gridSize;
             int row = currentIndex % gridSize;
 
-            // 아이템 위치 설정 (Y축을 따라 세로로 배치, X축으로 열 이동)
-            Vector3 newPosition = new Vector3(column * spacing, -row * spacing, 0);
+            // 아이템 위치 설정 (Y축을 따라 세로로 배치, X축으로 열 이동, Z축은 카메라와의 거리 조정)
+            Vector3 newPosition = new Vector3(column * spacing, -row * spacing, zOffset);
             newItem.transform.position = newPosition;
 
             // 다음 그리드 인덱스로 이동
