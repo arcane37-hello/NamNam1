@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5322777543987099855}
   - component: {fileID: 2982405999191962500}
   - component: {fileID: 6259592550152016086}
+  - component: {fileID: -3766169184251798510}
   m_Layer: 0
   m_Name: TestObject
   m_TagString: Fruit
@@ -128,8 +129,21 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-3766169184251798510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3776296618905255039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f02ccaf302b31419397c3b8d6e51fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSpeed: 30
