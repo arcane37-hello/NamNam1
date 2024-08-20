@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 307278389}
   - component: {fileID: 307278390}
+  - component: {fileID: 307278391}
   m_Layer: 0
   m_Name: FruitSpawner (3)
   m_TagString: Untagged
@@ -168,6 +169,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitPrefab: {fileID: 3776296618905255039, guid: 019ce534040851140854f7950e055722, type: 3}
   spawnInterval: 0.7
+  activeDuration: 2.5
+--- !u!114 &307278391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307278388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 2136954750}
+  fruitSpawner: {fileID: 307278390}
 --- !u!1 &874523876 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: bcf63894e65e46f40be7aeb69ae0be10, type: 3}
@@ -185,6 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39734f51854a32c42a9f61fccb148ba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 2136954750}
   scaleIncrement: 0.1
 --- !u!1 &881589531
 GameObject:
@@ -196,6 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881589532}
   - component: {fileID: 881589533}
+  - component: {fileID: 881589534}
   m_Layer: 0
   m_Name: FruitSpawner (2)
   m_TagString: Untagged
@@ -232,6 +250,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitPrefab: {fileID: 3776296618905255039, guid: 019ce534040851140854f7950e055722, type: 3}
   spawnInterval: 0.2
+  activeDuration: 2.5
+--- !u!114 &881589534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881589531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 2136954750}
+  fruitSpawner: {fileID: 881589533}
 --- !u!1 &899068711
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 899068712}
   - component: {fileID: 899068713}
+  - component: {fileID: 899068714}
   m_Layer: 0
   m_Name: FruitSpawner (1)
   m_TagString: Untagged
@@ -278,6 +312,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitPrefab: {fileID: 3776296618905255039, guid: 019ce534040851140854f7950e055722, type: 3}
   spawnInterval: 0.3
+  activeDuration: 2.5
+--- !u!114 &899068714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899068711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 2136954750}
+  fruitSpawner: {fileID: 899068713}
 --- !u!1001 &1121843214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -564,6 +613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1501236458}
   - component: {fileID: 1501236459}
+  - component: {fileID: 1501236460}
   m_Layer: 0
   m_Name: FruitSpawner (5)
   m_TagString: Untagged
@@ -600,6 +650,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitPrefab: {fileID: 3776296618905255039, guid: 019ce534040851140854f7950e055722, type: 3}
   spawnInterval: 0.6
+  activeDuration: 2.5
+--- !u!114 &1501236460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501236457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 2136954750}
+  fruitSpawner: {fileID: 1501236459}
 --- !u!1 &1522505813
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,6 +918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1832243887}
   - component: {fileID: 1832243888}
+  - component: {fileID: 1832243889}
   m_Layer: 0
   m_Name: FruitSpawner
   m_TagString: Untagged
@@ -889,6 +955,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitPrefab: {fileID: 3776296618905255039, guid: 019ce534040851140854f7950e055722, type: 3}
   spawnInterval: 0.5
+  activeDuration: 2.5
+--- !u!114 &1832243889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832243886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 2136954750}
+  fruitSpawner: {fileID: 1832243888}
+--- !u!1 &2136954750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: bcf63894e65e46f40be7aeb69ae0be10, type: 3}
+  m_PrefabInstance: {fileID: 1121843214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
