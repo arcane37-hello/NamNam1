@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectBigger : MonoBehaviour
 {
+    public GameObject parent;
     public float scaleIncrement = 0.1f;  // 크기를 증가시킬 값
     private int keyPressCount = 0;       // J 키를 누른 횟수를 저장하는 변수
 
@@ -19,7 +20,7 @@ public class ObjectBigger : MonoBehaviour
             // J 키를 30번 누르면 오브젝트 파괴
             if (keyPressCount >= 30)
             {
-                Destroy(gameObject);
+                parent.SetActive(false);
             }
         }
     }
