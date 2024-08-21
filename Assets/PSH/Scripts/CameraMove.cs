@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class CameraMove : MonoBehaviour
 {
-    public Transform targetPosition;  // 카메라의 목표 위치와 회전
-    public float duration = 3.0f;     // 이동에 걸리는 시간
+    public Transform targetPosition;  // 카메라의 최종 목표 위치와 회전
+    public Transform targetPosition2; // 카메라가 처음으로 부드럽게 이동할 위치와 회전
+    public float moveDuration1 = 1.0f; // targetPosition2로 이동하는 데 걸리는 시간
+    public float moveDuration2 = 1.0f; // targetPosition으로 이동하는 데 걸리는 시간
     public Camera mainCamera;         // 이동할 카메라 (인스펙터에서 할당)
     public Button moveButton;         // 이동을 시작할 버튼 (인스펙터에서 할당)
     public Transform objectToRotate;  // 회전시킬 오브젝트 (인스펙터에서 할당)
@@ -19,7 +21,6 @@ public class CameraMove : MonoBehaviour
 
     void Start()
     {
-        // 버튼이 할당되지 않았으면 오류 메시지 출력
         if (moveButton != null)
         {
             // 버튼 클릭 시 카메라 이동 및 오브젝트 회전 시작
@@ -30,7 +31,6 @@ public class CameraMove : MonoBehaviour
             Debug.LogError("Move Button이 할당되지 않았습니다.");
         }
 
-        // 카메라와 목표 위치가 할당되지 않았으면 오류 메시지 출력
         if (mainCamera == null)
         {
             Debug.LogError("메인 카메라가 할당되지 않았습니다.");
@@ -39,6 +39,11 @@ public class CameraMove : MonoBehaviour
         if (targetPosition == null)
         {
             Debug.LogError("타겟 위치가 할당되지 않았습니다.");
+        }
+
+        if (targetPosition2 == null)
+        {
+            Debug.LogError("타겟 위치 2가 할당되지 않았습니다.");
         }
 
         if (objectToRotate == null)
@@ -61,36 +66,63 @@ public class CameraMove : MonoBehaviour
             {
                 StopCoroutine(moveCoroutine);
             }
-            moveCoroutine = StartCoroutine(MoveCameraToTarget());
-
-            if (rotateCoroutine != null)
-            {
-                StopCoroutine(rotateCoroutine);
-            }
-            rotateCoroutine = StartCoroutine(RotateObjectSmoothly());
+            moveCoroutine = StartCoroutine(MoveCameraSequence());
         }
     }
 
-    IEnumerator MoveCameraToTarget()
+    IEnumerator MoveCameraSequence()
     {
         isMoving = true;
 
+        // targetPosition2로 부드럽게 이동
         Vector3 startPosition = mainCamera.transform.position;
         Quaternion startRotation = mainCamera.transform.rotation;
+        Vector3 targetPosition2Position = targetPosition2.position;
+        Quaternion targetPosition2Rotation = targetPosition2.rotation;
         float elapsedTime = 0.0f;
 
-        while (elapsedTime < duration)
+        while (elapsedTime < moveDuration1)
         {
-            mainCamera.transform.position = Vector3.Lerp(startPosition, targetPosition.position, elapsedTime / duration);
-            mainCamera.transform.rotation = Quaternion.Lerp(startRotation, targetPosition.rotation, elapsedTime / duration);
+            mainCamera.transform.position = Vector3.Lerp(startPosition, targetPosition2Position, elapsedTime / moveDuration1);
+            mainCamera.transform.rotation = Quaternion.Lerp(startRotation, targetPosition2Rotation, elapsedTime / moveDuration1);
 
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
         // 이동 완료 후 정확한 위치와 회전 설정
-        mainCamera.transform.position = targetPosition.position;
-        mainCamera.transform.rotation = targetPosition.rotation;
+        mainCamera.transform.position = targetPosition2Position;
+        mainCamera.transform.rotation = targetPosition2Rotation;
+
+        // 오브젝트 회전 시작
+        if (objectToRotate != null)
+        {
+            if (rotateCoroutine != null)
+            {
+                StopCoroutine(rotateCoroutine);
+            }
+            rotateCoroutine = StartCoroutine(RotateObjectSmoothly());
+        }
+
+        // targetPosition으로 부드럽게 이동
+        startPosition = mainCamera.transform.position;
+        startRotation = mainCamera.transform.rotation;
+        Vector3 targetPositionPosition = targetPosition.position;
+        Quaternion targetPositionRotation = targetPosition.rotation;
+        elapsedTime = 0.0f;
+
+        while (elapsedTime < moveDuration2)
+        {
+            mainCamera.transform.position = Vector3.Lerp(startPosition, targetPositionPosition, elapsedTime / moveDuration2);
+            mainCamera.transform.rotation = Quaternion.Lerp(startRotation, targetPositionRotation, elapsedTime / moveDuration2);
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // 이동 완료 후 정확한 위치와 회전 설정
+        mainCamera.transform.position = targetPositionPosition;
+        mainCamera.transform.rotation = targetPositionRotation;
 
         // 이동 완료 후 버튼 다시 활성화
         if (moveButton != null)
