@@ -22,25 +22,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;kkm2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Admin\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Admin\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.38f1\Editor\Unity.exe" />
@@ -110,6 +110,72 @@
       <workItem from="1724167330306" duration="18000" />
       <workItem from="1724167465247" duration="13000" />
       <workItem from="1724199797001" duration="24000" />
+      <workItem from="1724200844919" duration="10000" />
+      <workItem from="1724200918964" duration="12000" />
+      <workItem from="1724203328272" duration="1000" />
+      <workItem from="1724203355961" duration="85000" />
+      <workItem from="1724203449796" duration="42000" />
+      <workItem from="1724204014307" duration="10000" />
+      <workItem from="1724204067015" duration="8000" />
+      <workItem from="1724204191170" duration="10000" />
+      <workItem from="1724204268820" duration="8000" />
+      <workItem from="1724204600722" duration="7000" />
+      <workItem from="1724204637505" duration="18000" />
+      <workItem from="1724204759340" duration="15000" />
+      <workItem from="1724205551717" duration="15000" />
+      <workItem from="1724205693976" duration="21000" />
+      <workItem from="1724205909491" duration="281000" />
+      <workItem from="1724206630893" duration="1000" />
+      <workItem from="1724206644660" duration="350000" />
+      <workItem from="1724207123685" duration="16000" />
+      <workItem from="1724207276897" duration="8000" />
+      <workItem from="1724207354916" duration="10000" />
+      <workItem from="1724208211171" duration="9000" />
+      <workItem from="1724209529705" duration="303000" />
+      <workItem from="1724220229261" duration="7000" />
+      <workItem from="1724220299548" duration="129000" />
+      <workItem from="1724220482500" duration="150000" />
+      <workItem from="1724220657826" duration="13000" />
+      <workItem from="1724220730877" duration="20000" />
+      <workItem from="1724220767499" duration="64000" />
+      <workItem from="1724220846001" duration="53000" />
+      <workItem from="1724220935430" duration="10000" />
+      <workItem from="1724221064294" duration="707000" />
+      <workItem from="1724221997393" duration="27000" />
+      <workItem from="1724222035038" duration="24000" />
+      <workItem from="1724224088439" duration="1654000" />
+      <workItem from="1724225774878" duration="58000" />
+      <workItem from="1724241862221" duration="4000" />
+      <workItem from="1724242143434" duration="1000" />
+      <workItem from="1724242151212" duration="6000" />
+      <workItem from="1724242281489" duration="78000" />
+      <workItem from="1724242445162" duration="27000" />
+      <workItem from="1724242621663" duration="14000" />
+      <workItem from="1724242685233" duration="14000" />
+      <workItem from="1724242774361" duration="33000" />
+      <workItem from="1724242885968" duration="223000" />
+      <workItem from="1724246801317" duration="66000" />
+      <workItem from="1724247362236" duration="470000" />
+      <workItem from="1724248278693" duration="635000" />
+      <workItem from="1724248949496" duration="5000" />
+      <workItem from="1724249025050" duration="9000" />
+      <workItem from="1724250552330" duration="10000" />
+      <workItem from="1724250784092" duration="16000" />
+      <workItem from="1724254035407" duration="31000" />
+      <workItem from="1724254123185" duration="15000" />
+      <workItem from="1724254732094" duration="66000" />
+      <workItem from="1724258030215" duration="1000" />
+      <workItem from="1724258053849" duration="6000" />
+      <workItem from="1724258078599" duration="23000" />
+      <workItem from="1724258136883" duration="5000" />
+      <workItem from="1724258216026" duration="10000" />
+      <workItem from="1724258250992" duration="27000" />
+      <workItem from="1724258368713" duration="11000" />
+      <workItem from="1724258599654" duration="67000" />
+      <workItem from="1724258737830" duration="27000" />
+      <workItem from="1724258945813" duration="12000" />
+      <workItem from="1724259085939" duration="14000" />
+      <workItem from="1724259981513" duration="25000" />
     </task>
     <servers />
   </component>

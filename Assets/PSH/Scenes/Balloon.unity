@@ -167,7 +167,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitPrefab: {fileID: 3776296618905255039, guid: 019ce534040851140854f7950e055722, type: 3}
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
   spawnInterval: 0.7
   activeDuration: 2.5
 --- !u!114 &307278391
@@ -203,6 +213,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 2136954750}
   scaleIncrement: 0.1
+--- !u!54 &874523882
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874523876}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &874523883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874523876}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a86dae46a9b4b64198df01fdd66dfce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 15
+--- !u!135 &874523886
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874523876}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.79018724
+  m_Center: {x: 0, y: 0.000000054130012, z: 0.09184909}
 --- !u!1 &881589531
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +319,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitPrefab: {fileID: 3776296618905255039, guid: 019ce534040851140854f7950e055722, type: 3}
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
   spawnInterval: 0.2
   activeDuration: 2.5
 --- !u!114 &881589534
@@ -310,7 +391,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitPrefab: {fileID: 3776296618905255039, guid: 019ce534040851140854f7950e055722, type: 3}
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
   spawnInterval: 0.3
   activeDuration: 2.5
 --- !u!114 &899068714
@@ -442,6 +533,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100002, guid: bcf63894e65e46f40be7aeb69ae0be10, type: 3}
       insertIndex: -1
       addedObject: {fileID: 874523880}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: bcf63894e65e46f40be7aeb69ae0be10, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 874523883}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: bcf63894e65e46f40be7aeb69ae0be10, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 874523882}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: bcf63894e65e46f40be7aeb69ae0be10, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 874523886}
   m_SourcePrefab: {fileID: 100100000, guid: bcf63894e65e46f40be7aeb69ae0be10, type: 3}
 --- !u!1 &1272710566
 GameObject:
@@ -648,7 +748,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitPrefab: {fileID: 3776296618905255039, guid: 019ce534040851140854f7950e055722, type: 3}
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
   spawnInterval: 0.6
   activeDuration: 2.5
 --- !u!114 &1501236460
@@ -953,7 +1063,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitPrefab: {fileID: 3776296618905255039, guid: 019ce534040851140854f7950e055722, type: 3}
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
   spawnInterval: 0.5
   activeDuration: 2.5
 --- !u!114 &1832243889
