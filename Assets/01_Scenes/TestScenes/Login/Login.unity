@@ -1113,6 +1113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1ced16ecb226b4896bfe4f5d08a53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionSound: {fileID: 8300000, guid: d4b4564ad8ca7254c9d41efb905858eb, type: 3}
 --- !u!82 &1694138379
 AudioSource:
   m_ObjectHideFlags: 0
