@@ -14,15 +14,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c7babd0d9f849c9449d1c29e86f6245f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c7babd0d9f849c9449d1c29e86f6245f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c7babd0d9f849c9449d1c29e86f6245f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c7babd0d9f849c9449d1c29e86f6245f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -97,4 +97,3 @@ MonoBehaviour:
   itemName: "\uB808\uBAAC"
   date: 
   special: 0
-  transparencyLevel: 0.5
