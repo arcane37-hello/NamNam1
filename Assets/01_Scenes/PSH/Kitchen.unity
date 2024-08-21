@@ -380,7 +380,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c61f0b01979229242a922c5ccaaee325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedItems: []
 --- !u!4 &198421327
 Transform:
   m_ObjectHideFlags: 0
@@ -673,6 +672,7 @@ GameObject:
   - component: {fileID: 298623342}
   - component: {fileID: 298623344}
   - component: {fileID: 298623343}
+  - component: {fileID: 298623345}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -741,6 +741,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298623341}
   m_CullTransparentMesh: 1
+--- !u!114 &298623345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298623341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &309342995
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,6 +2061,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae3824b348d05c4db5e03f5d9f6767f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
+  openSound: {fileID: 0}
   randomItems:
   - {fileID: 5528158158754612035, guid: 1e8e547cceaecb14bbc83d68f52e2244, type: 3}
   - {fileID: 3926830326182566310, guid: f5780e1a405c9314184da6325fed6a72, type: 3}
@@ -2065,7 +2083,6 @@ MonoBehaviour:
   - {fileID: 8811540375526631969, guid: 5e3d78ea0b1540241b7d88f9ebd52bee, type: 3}
   - {fileID: 2657165828298774113, guid: 797175c5ce3538943bb34ce803c02515, type: 3}
   spawnPoint: {fileID: 1877531998}
-  itemManager: {fileID: 198421326}
 --- !u!95 &733609180
 Animator:
   serializedVersion: 5
