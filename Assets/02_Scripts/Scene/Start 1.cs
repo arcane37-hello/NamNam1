@@ -29,7 +29,7 @@ public class Start1 : MonoBehaviour
 
     private void LoadScene()
     {
-        SceneManager.LoadScene(3);  // 씬 인덱스 3으로 전환
+        SceneManager.LoadScene(4);  // 씬 인덱스 3으로 전환
         // 또는 SceneManager.LoadScene("PlayScene");  // 씬 이름으로 전환
     }
 }
