@@ -9,6 +9,7 @@ public class SpawnerController : MonoBehaviour
     public GameObject objectToActivate; // 활성화할 특정 오브젝트
     public float cameraMoveDuration = 2.5f; // 카메라 이동 시간
     public float cameraMoveSpeed = 1.0f; // 카메라 이동 속도
+    public Canvas canvas;
 
     private void Start()
     {
@@ -39,6 +40,7 @@ public class SpawnerController : MonoBehaviour
         if (index == spawners.Length - 1)
         {
             StartCoroutine(MoveCameraAndActivateObject());
+            canvas.gameObject.SetActive(false);
         }
     }
 

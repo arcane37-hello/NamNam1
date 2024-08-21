@@ -1500,10 +1500,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1910330273}
     m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
     - target: {fileID: 1374312943397061712, guid: f49c4d0e361dc834483b8d293448ffaa, type: 3}
       propertyPath: countText
       value: 
@@ -1568,6 +1564,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1620,10 +1620,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1910330273}
     m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
     - target: {fileID: 1374312943397061712, guid: f49c4d0e361dc834483b8d293448ffaa, type: 3}
       propertyPath: countText
       value: 
@@ -1688,6 +1684,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2168,10 +2168,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1910330273}
     m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
     - target: {fileID: 1374312943397061712, guid: f49c4d0e361dc834483b8d293448ffaa, type: 3}
       propertyPath: countText
       value: 
@@ -2236,6 +2232,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3016,10 +3016,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1910330273}
     m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
     - target: {fileID: 1374312943397061712, guid: f49c4d0e361dc834483b8d293448ffaa, type: 3}
       propertyPath: countText
       value: 
@@ -3084,6 +3080,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3394,10 +3394,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1910330273}
     m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
     - target: {fileID: 1374312943397061712, guid: f49c4d0e361dc834483b8d293448ffaa, type: 3}
       propertyPath: countText
       value: 
@@ -3462,6 +3458,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3783,10 +3783,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1910330273}
     m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
     - target: {fileID: 1374312943397061712, guid: f49c4d0e361dc834483b8d293448ffaa, type: 3}
       propertyPath: countText
       value: 
@@ -3851,6 +3847,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4576,10 +4576,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1910330273}
     m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
     - target: {fileID: 1374312943397061712, guid: f49c4d0e361dc834483b8d293448ffaa, type: 3}
       propertyPath: countText
       value: 
@@ -4644,6 +4640,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4721,6 +4721,7 @@ MonoBehaviour:
   objectToActivate: {fileID: 733609177}
   cameraMoveDuration: 2.5
   cameraMoveSpeed: 1
+  canvas: {fileID: 1622248862}
 --- !u!1 &1622248858
 GameObject:
   m_ObjectHideFlags: 0
@@ -4903,10 +4904,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1910330273}
     m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
     - target: {fileID: 1374312943397061712, guid: f49c4d0e361dc834483b8d293448ffaa, type: 3}
       propertyPath: countText
       value: 
@@ -4971,6 +4968,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5953,10 +5954,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1910330273}
     m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
     - target: {fileID: 1374312943397061712, guid: f49c4d0e361dc834483b8d293448ffaa, type: 3}
       propertyPath: countText
       value: 
@@ -6021,6 +6018,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6161,10 +6162,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1910330273}
     m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
     - target: {fileID: 1374312943397061712, guid: f49c4d0e361dc834483b8d293448ffaa, type: 3}
       propertyPath: countText
       value: 
@@ -6229,6 +6226,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
