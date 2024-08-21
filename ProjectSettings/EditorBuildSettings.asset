@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/01_Scenes/TestScenes/MyRefrigerator/MyRefrigerator.unity
     guid: f53c844959ae19a4eb27c2e8a5c50cdb
   - enabled: 1
-    path: Assets/SHP/ItemGet.unity
+    path: Assets/01_Scenes/ItemGet.unity
     guid: d237e49105bad2f4ea052ca8ec551722
   m_configObjects: {}
