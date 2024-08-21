@@ -3,12 +3,11 @@ using UnityEngine;
 
 public class ItemManager : MonoBehaviour
 {
-    public List<ItemBehavior> collectedItems = new List<ItemBehavior>(); // 획득한 아이템 리스트
+    private List<ItemBehavior> items = new List<ItemBehavior>();
 
-    // 아이템을 리스트에 등록하는 메서드
-    public void AddItem(ItemBehavior itemName)
+    public void AddItem(ItemBehavior item)
     {
-        collectedItems.Add(itemName);
-        Debug.Log(itemName + " has been added to the inventory.");
+        items.Add(item);
+        Debug.Log($"Added item: {item.itemName} to the list. Total items: {items.Count}");
     }
 }

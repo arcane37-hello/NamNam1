@@ -160,6 +160,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae3824b348d05c4db5e03f5d9f6767f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
+  openSound: {fileID: 0}
   randomItems:
   - {fileID: 5528158158754612035, guid: 1e8e547cceaecb14bbc83d68f52e2244, type: 3}
   - {fileID: 3926830326182566310, guid: f5780e1a405c9314184da6325fed6a72, type: 3}
@@ -179,7 +182,6 @@ MonoBehaviour:
   - {fileID: 8811540375526631969, guid: 5e3d78ea0b1540241b7d88f9ebd52bee, type: 3}
   - {fileID: 2657165828298774113, guid: 797175c5ce3538943bb34ce803c02515, type: 3}
   spawnPoint: {fileID: 1210453228}
-  itemManager: {fileID: 2127187686}
 --- !u!95 &372741863
 Animator:
   serializedVersion: 5
@@ -649,6 +651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2127187687}
   - component: {fileID: 2127187686}
+  - component: {fileID: 2127187688}
   m_Layer: 0
   m_Name: ItemManager
   m_TagString: Untagged
@@ -668,7 +671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c61f0b01979229242a922c5ccaaee325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedItems: []
 --- !u!4 &2127187687
 Transform:
   m_ObjectHideFlags: 0
@@ -684,6 +686,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2127187688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127187685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f727fbb6ff272724ca0496b9859ae7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9037700822288996219
 PrefabInstance:
   m_ObjectHideFlags: 0
