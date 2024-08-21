@@ -18,15 +18,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 415dfef8c9260714096a53fb7829ac33, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 415dfef8c9260714096a53fb7829ac33, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 415dfef8c9260714096a53fb7829ac33, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 415dfef8c9260714096a53fb7829ac33, type: 3}
       propertyPath: m_LocalPosition.x
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f02ccaf302b31419397c3b8d6e51fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 30
+  fallSpeed: 20
 --- !u!135 &4628714171999203767
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -146,7 +146,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
