@@ -102,7 +102,6 @@ public class RefrigeratorManager : MonoBehaviour
             {
                 string jsonResponse = www.downloadHandler.text;
                 List<RefrigeratorItem> items = JsonUtility.FromJson<List<RefrigeratorItem>>("{\"items\":" + jsonResponse + "}");
-
                 SyncItemsToGameObjects(items);
             }
             else

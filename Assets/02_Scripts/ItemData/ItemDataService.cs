@@ -5,12 +5,12 @@ using System.Collections;
 
 public class ItemDataService : MonoBehaviour
 {
-    private const string API_ENDPOINT = "http://172.16.17.131:8080/api/v1/users/refrigerator";
+    private const string SAVE_ITEM_URL = "http://172.16.17.131:8080/api/v1/users/refrigerator";
 
     [Serializable]
     private class ItemData
     {
-        public string uuid;
+        public string uuid;      // ������� UUID
         public string itemName;
         public string date;
         public bool special;
@@ -28,7 +28,7 @@ public class ItemDataService : MonoBehaviour
 
         string json = JsonUtility.ToJson(itemData);
 
-        using (UnityWebRequest www = UnityWebRequest.PostWwwForm(API_ENDPOINT, json))
+        using (UnityWebRequest www = UnityWebRequest.PostWwwForm(SAVE_ITEM_URL, json))
         {
             www.SetRequestHeader("Content-Type", "application/json");
             www.uploadHandler = new UploadHandlerRaw(System.Text.Encoding.UTF8.GetBytes(json));
