@@ -22,7 +22,7 @@ public class Box : MonoBehaviour
     {
         if (animator == null) animator = GetComponent<Animator>();
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
-
+        print("??");
         itemDataService = FindObjectOfType<ItemDataService>();
         if (itemDataService == null)
         {

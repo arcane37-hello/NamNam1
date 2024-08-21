@@ -52,7 +52,7 @@ public class LoginManager : MonoBehaviour
             {
                 // 로그인 성공 처리
                 // 메인 게임 씬으로 이동하거나 다른 처리를 수행
-                SceneManager.LoadScene("MyRefrigerator");
+                SceneManager.LoadScene("Kitchen");
             }
         }
     }
