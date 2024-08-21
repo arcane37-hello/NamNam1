@@ -15,9 +15,12 @@ EditorBuildSettings:
     path: Assets/01_Scenes/TestScenes/MyRefrigerator/MyRefrigerator.unity
     guid: f53c844959ae19a4eb27c2e8a5c50cdb
   - enabled: 1
-    path: Assets/KKM/Main/MainSelect.unity
+    path: Assets/01_Scenes/MainSelect.unity
     guid: a9c92ba626970aa488ba618f79ef6480
   - enabled: 1
     path: Assets/01_Scenes/ItemGet.unity
     guid: d237e49105bad2f4ea052ca8ec551722
+  - enabled: 1
+    path: Assets/01_Scenes/PSH/Kitchen.unity
+    guid: 3a5a31b564744574286f37731ad68ed9
   m_configObjects: {}
