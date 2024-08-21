@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/KKM/ItemRandom.unity.meta
 guid: b7d7b54d21e35b64e80d971f673f8fdf
+========
+guid: a5b6afb864d0c4ea79b9724812774425
+>>>>>>>> Stashed changes:Assets/Package04_Free_Kitchen/FreeKitchen/SRP UpgradePackage/Built-in_Material.unitypackage.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
