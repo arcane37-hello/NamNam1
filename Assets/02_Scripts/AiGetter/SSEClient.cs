@@ -25,18 +25,46 @@ public class SSEClient : MonoBehaviour
 
             using (UnityWebRequest request = UnityWebRequest.Get(sseEndpoint))
             {
+                // 요청 헤더 설정
                 request.SetRequestHeader("Accept", "text/event-stream");
                 request.downloadHandler = new StreamingDownloadHandler();
                 request.timeout = 30;
+
+                Debug.Log($"요청 URL: {sseEndpoint}");
+                Debug.Log("설정된 요청 헤더:");
+                Debug.Log($"  Accept: {request.GetRequestHeader("Accept")}");
 
                 yield return request.SendWebRequest();
 
                 Debug.Log($"연결 상태: {request.result}");
 
+                // 응답 헤더 로깅
+                Debug.Log("응답 헤더:");
+                if (request.GetResponseHeaders() != null)
+                {
+                    foreach (var header in request.GetResponseHeaders())
+                    {
+                        Debug.Log($"  {header.Key}: {header.Value}");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("응답 헤더가 null입니다.");
+                }
+
                 if (request.result == UnityWebRequest.Result.ConnectionError ||
                     request.result == UnityWebRequest.Result.ProtocolError)
                 {
                     Debug.LogError($"연결 오류: {request.error}");
+                    Debug.LogError($"응답 코드: {request.responseCode}");
+                    Debug.LogError($"상세 에러: {request.downloadHandler.error}");
+                    reconnectAttempts++;
+                    Debug.Log($"재연결 대기 중... ({reconnectInterval}초)");
+                    yield return new WaitForSeconds(reconnectInterval);
+                }
+                else if (request.responseCode == 0)
+                {
+                    Debug.LogError("서버로부터 응답이 없습니다. 서버가 실행 중인지 확인하세요.");
                     reconnectAttempts++;
                     yield return new WaitForSeconds(reconnectInterval);
                 }
@@ -47,10 +75,10 @@ public class SSEClient : MonoBehaviour
                     StreamingDownloadHandler downloadHandler = (StreamingDownloadHandler)request.downloadHandler;
                     while (!downloadHandler.isDone)
                     {
-                        List<string> events = downloadHandler.GetEvents();
-                        foreach (string eventData in events)
+                        string receivedData = downloadHandler.GetNextChunk();
+                        if (!string.IsNullOrEmpty(receivedData))
                         {
-                            ProcessEvent(eventData);
+                            Debug.Log($"수신된 데이터: {receivedData}");
                         }
                         yield return null;
                     }
@@ -60,21 +88,16 @@ public class SSEClient : MonoBehaviour
 
         Debug.LogWarning("최대 재연결 시도 횟수 초과. SSE 수신 종료.");
     }
-
-    private void ProcessEvent(string eventData)
-    {
-        // 여기에서 이벤트 데이터를 처리합니다.
-        Debug.Log($"수신된 이벤트: {eventData}");
-    }
 }
 
 public class StreamingDownloadHandler : DownloadHandlerScript
 {
-    private StringBuilder buffer = new StringBuilder();
-    private List<string> events = new List<string>();
+    private StringBuilder messageBuilder = new StringBuilder();
     private bool _isDone = false;
 
     public bool isDone => _isDone;
+
+    public StreamingDownloadHandler() : base() { }
 
     protected override bool ReceiveData(byte[] data, int dataLength)
     {
@@ -84,25 +107,16 @@ public class StreamingDownloadHandler : DownloadHandlerScript
         }
 
         string chunk = Encoding.UTF8.GetString(data, 0, dataLength);
-        buffer.Append(chunk);
-
-        // 완전한 이벤트를 찾아 처리합니다.
-        int index;
-        while ((index = buffer.ToString().IndexOf("\n\n")) != -1)
-        {
-            string eventData = buffer.ToString(0, index).Trim();
-            events.Add(eventData);
-            buffer.Remove(0, index + 2);
-        }
-
+        messageBuilder.Append(chunk);
+        Debug.Log($"데이터 청크 수신: {chunk}");
         return true;
     }
 
-    public List<string> GetEvents()
+    public string GetNextChunk()
     {
-        List<string> result = new List<string>(events);
-        events.Clear();
-        return result;
+        string message = messageBuilder.ToString();
+        messageBuilder.Clear();
+        return message;
     }
 
     protected override void CompleteContent()
