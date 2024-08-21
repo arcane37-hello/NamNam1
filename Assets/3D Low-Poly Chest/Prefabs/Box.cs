@@ -5,13 +5,13 @@ using System.Collections;
 public class Box : MonoBehaviour
 {
     [SerializeField] private Animator animator;
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip openSound;
     [SerializeField] private GameObject[] randomItems; // 박스에서 생성될 아이템들
     [SerializeField] private Transform spawnPoint;
+    [SerializeField] private GameObject popCanvas; // Pop Canvas 추가
 
-    private bool isOpen = false;
+    private bool open = false;
     private ItemDataService itemDataService;
+    public AudioSource PungAudio;
 
     void Start()
     {
@@ -21,18 +21,27 @@ public class Box : MonoBehaviour
     void InitializeComponents()
     {
         if (animator == null) animator = GetComponent<Animator>();
-        if (audioSource == null) audioSource = GetComponent<AudioSource>();
-        print("??");
+   
+
         itemDataService = FindObjectOfType<ItemDataService>();
         if (itemDataService == null)
         {
             Debug.LogError("ItemDataService를 찾을 수 없습니다. ItemDataService를 씬에 추가하세요.");
         }
+
+        if (popCanvas != null)
+        {
+            popCanvas.SetActive(false); // 처음엔 Pop Canvas를 비활성화
+        }
+        else
+        {
+            Debug.LogWarning("Pop Canvas가 설정되어 있지 않습니다.");
+        }
     }
 
     void OnMouseDown()
     {
-        if (!isOpen)
+        if (!open)
         {
             OpenBox();
         }
@@ -40,18 +49,36 @@ public class Box : MonoBehaviour
 
     void OpenBox()
     {
-        isOpen = true;
-        animator.SetBool("isOpen", isOpen);
-        PlayOpenSound();
+        open = true;
+        animator.SetBool("open", open);
+        ShowPopCanvas(); // 박스 열리면서 Pop Canvas 표시
+        PungAudio.Play();
         StartCoroutine(SpawnItemAfterDelay());
     }
+    
 
-    void PlayOpenSound()
+    void ShowPopCanvas()
     {
-        if (audioSource != null && openSound != null)
+        if (popCanvas != null)
         {
-            audioSource.PlayOneShot(openSound);
+            StartCoroutine(ShowAndHidePopCanvasWithDelay());
         }
+    }
+
+    IEnumerator ShowAndHidePopCanvasWithDelay()
+    {
+        yield return new WaitForSeconds(1f); // 0.5초 딜레이 추가
+       
+        popCanvas.SetActive(true);
+        StartCoroutine(HidePopCanvasAfterDelay());
+        
+    }
+
+    
+    IEnumerator HidePopCanvasAfterDelay()
+    {
+        yield return new WaitForSeconds(1.0f); // 1초 후에 Pop Canvas를 비활성화
+        popCanvas.SetActive(false);
     }
 
     IEnumerator SpawnItemAfterDelay()
@@ -121,7 +148,8 @@ public class Box : MonoBehaviour
 
     IEnumerator DestroyItemAfterDelay(GameObject item)
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(3.0f);
         Destroy(item);
+        Destroy(gameObject);
     }
 }
