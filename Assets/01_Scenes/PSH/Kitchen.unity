@@ -122,6 +122,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71380723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 945372173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &71380726 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 945372173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &71380727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71380723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 71380723}
+  spawnerController: {fileID: 1614807376}
+  spawnerIndex: 9
+--- !u!1 &95255119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 95255120}
+  m_Layer: 0
+  m_Name: SpawnerGroup7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &95255120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95255119}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1706403048}
+  - {fileID: 855755312}
+  - {fileID: 1569766609}
+  - {fileID: 2074266721}
+  - {fileID: 1782024883}
+  m_Father: {fileID: 1614807375}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &178700971
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +193,6 @@ GameObject:
   m_Component:
   - component: {fileID: 178700972}
   - component: {fileID: 178700974}
-  - component: {fileID: 178700973}
   m_Layer: 0
   m_Name: FruitSpawner (1)
   m_TagString: Untagged
@@ -155,20 +215,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 562551252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &178700973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178700971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 178700974}
 --- !u!114 &178700974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,7 +239,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.3
-  activeDuration: 2.5
 --- !u!1 &208000964
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +249,6 @@ GameObject:
   m_Component:
   - component: {fileID: 208000965}
   - component: {fileID: 208000967}
-  - component: {fileID: 208000966}
   m_Layer: 0
   m_Name: FruitSpawner (1)
   m_TagString: Untagged
@@ -227,20 +271,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 470474987}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &208000966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208000964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 208000967}
 --- !u!114 &208000967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +295,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.3
-  activeDuration: 2.5
 --- !u!1 &238090540
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +437,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279627899}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -418,140 +447,8 @@ Transform:
   - {fileID: 1994615833}
   - {fileID: 1853153535}
   - {fileID: 844359262}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1614807375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &281607820
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1910330273}
-    m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
-    - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_Name
-      value: Slime_02 (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.32478702
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.6724199
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.26087028
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
---- !u!4 &281607821 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-  m_PrefabInstance: {fileID: 281607820}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &287572080
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1910330273}
-    m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
-    - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_Name
-      value: Slime_02 (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.32478702
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.6724199
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.26087028
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
---- !u!4 &287572081 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-  m_PrefabInstance: {fileID: 287572080}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &296158373
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +459,6 @@ GameObject:
   m_Component:
   - component: {fileID: 296158374}
   - component: {fileID: 296158376}
-  - component: {fileID: 296158375}
   m_Layer: 0
   m_Name: FruitSpawner (2)
   m_TagString: Untagged
@@ -585,20 +481,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 562551252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &296158375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296158373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 296158376}
 --- !u!114 &296158376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,7 +505,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.2
-  activeDuration: 2.5
 --- !u!1 &298623341
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,7 +594,6 @@ GameObject:
   m_Component:
   - component: {fileID: 309342998}
   - component: {fileID: 309342997}
-  - component: {fileID: 309342996}
   m_Layer: 0
   m_Name: FruitSpawner (4)
   m_TagString: Untagged
@@ -721,20 +601,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &309342996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309342995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 309342997}
 --- !u!114 &309342997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -759,7 +625,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.6
-  activeDuration: 2.5
 --- !u!4 &309342998
 Transform:
   m_ObjectHideFlags: 0
@@ -932,7 +797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330900538}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -942,7 +807,7 @@ Transform:
   - {fileID: 1108470286}
   - {fileID: 1498084056}
   - {fileID: 1212556287}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1614807375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339555889
 GameObject:
@@ -1088,7 +953,6 @@ GameObject:
   m_Component:
   - component: {fileID: 359713646}
   - component: {fileID: 359713648}
-  - component: {fileID: 359713647}
   m_Layer: 0
   m_Name: FruitSpawner (4)
   m_TagString: Untagged
@@ -1111,20 +975,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 562551252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &359713647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359713645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 359713648}
 --- !u!114 &359713648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1149,7 +999,31 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.6
-  activeDuration: 2.5
+--- !u!1 &416417559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 549292517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &416417562 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 549292517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &416417563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416417559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 416417559}
+  spawnerController: {fileID: 1614807376}
+  spawnerIndex: 8
 --- !u!1 &416517761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,7 +1034,6 @@ GameObject:
   m_Component:
   - component: {fileID: 416517762}
   - component: {fileID: 416517764}
-  - component: {fileID: 416517763}
   m_Layer: 0
   m_Name: FruitSpawner (4)
   m_TagString: Untagged
@@ -1183,20 +1056,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 330900539}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &416517763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416517761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 416517764}
 --- !u!114 &416517764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,7 +1080,42 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.6
-  activeDuration: 2.5
+--- !u!1 &433086238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433086239}
+  m_Layer: 0
+  m_Name: SpawnerGroup9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &433086239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433086238}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 757864857}
+  - {fileID: 1432044478}
+  - {fileID: 1323883986}
+  - {fileID: 951936611}
+  - {fileID: 1379227474}
+  m_Father: {fileID: 1614807375}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &470474986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,7 +1140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470474986}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1256,7 +1150,7 @@ Transform:
   - {fileID: 208000965}
   - {fileID: 868042373}
   - {fileID: 545643099}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1614807375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &494990069
 GameObject:
@@ -1268,7 +1162,6 @@ GameObject:
   m_Component:
   - component: {fileID: 494990070}
   - component: {fileID: 494990072}
-  - component: {fileID: 494990071}
   m_Layer: 0
   m_Name: FruitSpawner
   m_TagString: Untagged
@@ -1291,20 +1184,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 279627900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &494990071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 494990069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 494990072}
 --- !u!114 &494990072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1329,7 +1208,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.5
-  activeDuration: 2.5
 --- !u!1 &545643098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,7 +1218,6 @@ GameObject:
   m_Component:
   - component: {fileID: 545643099}
   - component: {fileID: 545643101}
-  - component: {fileID: 545643100}
   m_Layer: 0
   m_Name: FruitSpawner (3)
   m_TagString: Untagged
@@ -1363,20 +1240,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 470474987}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &545643100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545643098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 545643101}
 --- !u!114 &545643101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,8 +1264,7 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.7
-  activeDuration: 2.5
---- !u!1 &562551251
+--- !u!1 &547018539
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1410,88 +1272,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 562551252}
+  - component: {fileID: 547018540}
+  - component: {fileID: 547018542}
   m_Layer: 0
-  m_Name: SpawnerGroup4
+  m_Name: FruitSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &562551252
+--- !u!4 &547018540
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 562551251}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 899766488}
-  - {fileID: 359713646}
-  - {fileID: 178700972}
-  - {fileID: 296158374}
-  - {fileID: 846352485}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &573395838
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 573395839}
-  - component: {fileID: 573395841}
-  - component: {fileID: 573395840}
-  m_Layer: 0
-  m_Name: FruitSpawner (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &573395839
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573395838}
+  m_GameObject: {fileID: 547018539}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.12, y: 14.54, z: -1.05}
+  m_LocalPosition: {x: -1.53, y: 14.54, z: -0.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1872858374}
+  m_Father: {fileID: 891920236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &573395840
+--- !u!114 &547018542
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573395838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 573395841}
---- !u!114 &573395841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573395838}
+  m_GameObject: {fileID: 547018539}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
@@ -1508,9 +1319,8 @@ MonoBehaviour:
     probability: 0.2
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
-  spawnInterval: 0.7
-  activeDuration: 2.5
---- !u!1001 &586686414
+  spawnInterval: 0.5
+--- !u!1001 &549292517
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1524,7 +1334,7 @@ PrefabInstance:
       objectReference: {fileID: 298623343}
     - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
       propertyPath: m_Name
-      value: Slime_02 (3)
+      value: Slime_02 (8)
       objectReference: {fileID: 0}
     - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1569,13 +1379,167 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 416417563}
   m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
---- !u!4 &586686415 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-  m_PrefabInstance: {fileID: 586686414}
+--- !u!1 &562551251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562551252}
+  m_Layer: 0
+  m_Name: SpawnerGroup4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562551252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562551251}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 899766488}
+  - {fileID: 359713646}
+  - {fileID: 178700972}
+  - {fileID: 296158374}
+  - {fileID: 846352485}
+  m_Father: {fileID: 1614807375}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &567395460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1910330273}
+    m_Modifications:
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
+    - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_Name
+      value: Slime_02 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.32478702
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6724199
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.26087028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1752472240}
+  m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+--- !u!1 &573395838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 573395839}
+  - component: {fileID: 573395841}
+  m_Layer: 0
+  m_Name: FruitSpawner (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &573395839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573395838}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.12, y: 14.54, z: -1.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1872858374}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &573395841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573395838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.7
 --- !u!1 &601743927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,7 +1653,6 @@ GameObject:
   m_Component:
   - component: {fileID: 638481981}
   - component: {fileID: 638481983}
-  - component: {fileID: 638481982}
   m_Layer: 0
   m_Name: FruitSpawner (2)
   m_TagString: Untagged
@@ -1712,20 +1675,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1872858374}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &638481982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638481980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 638481983}
 --- !u!114 &638481983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1750,73 +1699,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.2
-  activeDuration: 2.5
---- !u!1001 &641135988
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1910330273}
-    m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
-    - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_Name
-      value: Slime_02 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.32478702
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.6724199
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.26087028
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
---- !u!4 &641135989 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-  m_PrefabInstance: {fileID: 641135988}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &656872932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,7 +1709,6 @@ GameObject:
   m_Component:
   - component: {fileID: 656872935}
   - component: {fileID: 656872934}
-  - component: {fileID: 656872933}
   m_Layer: 0
   m_Name: FruitSpawner (1)
   m_TagString: Untagged
@@ -1835,20 +1716,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &656872933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656872932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 656872934}
 --- !u!114 &656872934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1873,7 +1740,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.3
-  activeDuration: 2.5
 --- !u!4 &656872935
 Transform:
   m_ObjectHideFlags: 0
@@ -1920,6 +1786,207 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &728996066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 1600786367}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &728996069 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 1600786367}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &728996070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728996066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 728996066}
+  spawnerController: {fileID: 1614807376}
+  spawnerIndex: 6
+--- !u!1 &757864856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 757864857}
+  - component: {fileID: 757864859}
+  m_Layer: 0
+  m_Name: FruitSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &757864857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757864856}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.53, y: 14.54, z: -0.96}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 433086239}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &757864859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757864856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.5
+--- !u!1001 &774043915
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1910330273}
+    m_Modifications:
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
+    - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_Name
+      value: Slime_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.32478702
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6724199
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.26087028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 827102190}
+  m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+--- !u!1 &804756136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804756137}
+  - component: {fileID: 804756139}
+  m_Layer: 0
+  m_Name: FruitSpawner (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &804756137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804756136}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.12, y: 14.54, z: -1.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 891920236}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &804756139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804756136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.7
 --- !u!1001 &810153861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2011,7 +2078,6 @@ GameObject:
   m_Component:
   - component: {fileID: 810326960}
   - component: {fileID: 810326962}
-  - component: {fileID: 810326961}
   m_Layer: 0
   m_Name: FruitSpawner (4)
   m_TagString: Untagged
@@ -2034,20 +2100,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 279627900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &810326961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 810326959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 810326962}
 --- !u!114 &810326962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2072,7 +2124,31 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.6
-  activeDuration: 2.5
+--- !u!1 &827102186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 774043915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &827102189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 774043915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &827102190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827102186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 827102186}
+  spawnerController: {fileID: 1614807376}
+  spawnerIndex: 5
 --- !u!1 &837344050
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,7 +2159,6 @@ GameObject:
   m_Component:
   - component: {fileID: 837344053}
   - component: {fileID: 837344052}
-  - component: {fileID: 837344051}
   m_Layer: 0
   m_Name: FruitSpawner (2)
   m_TagString: Untagged
@@ -2091,20 +2166,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &837344051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837344050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 837344052}
 --- !u!114 &837344052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2129,7 +2190,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.2
-  activeDuration: 2.5
 --- !u!4 &837344053
 Transform:
   m_ObjectHideFlags: 0
@@ -2155,7 +2215,6 @@ GameObject:
   m_Component:
   - component: {fileID: 844359262}
   - component: {fileID: 844359264}
-  - component: {fileID: 844359263}
   m_Layer: 0
   m_Name: FruitSpawner (3)
   m_TagString: Untagged
@@ -2178,20 +2237,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 279627900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &844359263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844359261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 844359264}
 --- !u!114 &844359264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2216,7 +2261,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.7
-  activeDuration: 2.5
 --- !u!1 &846352484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,7 +2271,6 @@ GameObject:
   m_Component:
   - component: {fileID: 846352485}
   - component: {fileID: 846352487}
-  - component: {fileID: 846352486}
   m_Layer: 0
   m_Name: FruitSpawner (3)
   m_TagString: Untagged
@@ -2250,20 +2293,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 562551252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &846352486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846352484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 846352487}
 --- !u!114 &846352487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2288,7 +2317,118 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.7
-  activeDuration: 2.5
+--- !u!1 &855755311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 855755312}
+  - component: {fileID: 855755314}
+  m_Layer: 0
+  m_Name: FruitSpawner (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &855755312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855755311}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.96, y: 14.55, z: -1.03}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 95255120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &855755314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855755311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.6
+--- !u!1 &866859308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866859309}
+  - component: {fileID: 866859311}
+  m_Layer: 0
+  m_Name: FruitSpawner (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &866859309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866859308}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.96, y: 14.55, z: -1.03}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 891920236}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866859311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866859308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.6
 --- !u!1 &868042372
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,7 +2439,6 @@ GameObject:
   m_Component:
   - component: {fileID: 868042373}
   - component: {fileID: 868042375}
-  - component: {fileID: 868042374}
   m_Layer: 0
   m_Name: FruitSpawner (2)
   m_TagString: Untagged
@@ -2322,20 +2461,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 470474987}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &868042374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868042372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 868042375}
 --- !u!114 &868042375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2360,7 +2485,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.2
-  activeDuration: 2.5
 --- !u!1 &872903804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,6 +2516,98 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &882605533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882605534}
+  - component: {fileID: 882605536}
+  m_Layer: 0
+  m_Name: FruitSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &882605534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882605533}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.05, y: 14.54, z: -1.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2129785898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &882605536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882605533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.3
+--- !u!1 &891920235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891920236}
+  m_Layer: 0
+  m_Name: SpawnerGroup10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891920236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891920235}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 547018540}
+  - {fileID: 866859309}
+  - {fileID: 1249912273}
+  - {fileID: 1892230986}
+  - {fileID: 804756137}
+  m_Father: {fileID: 1614807375}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &899766487
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,7 +2618,6 @@ GameObject:
   m_Component:
   - component: {fileID: 899766488}
   - component: {fileID: 899766490}
-  - component: {fileID: 899766489}
   m_Layer: 0
   m_Name: FruitSpawner
   m_TagString: Untagged
@@ -2425,20 +2640,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 562551252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &899766489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 899766487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 899766490}
 --- !u!114 &899766490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2463,7 +2664,126 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.5
-  activeDuration: 2.5
+--- !u!1001 &945372173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1910330273}
+    m_Modifications:
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
+    - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_Name
+      value: Slime_02 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.32478702
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6724199
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.26087028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 71380727}
+  m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+--- !u!1 &951936610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 951936611}
+  - component: {fileID: 951936613}
+  m_Layer: 0
+  m_Name: FruitSpawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &951936611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951936610}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.66, y: 14.54, z: -1.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 433086239}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &951936613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951936610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.2
 --- !u!1 &970788774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2549,7 +2869,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1007938748}
   - component: {fileID: 1007938750}
-  - component: {fileID: 1007938749}
   m_Layer: 0
   m_Name: FruitSpawner (4)
   m_TagString: Untagged
@@ -2572,20 +2891,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1872858374}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1007938749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007938747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1007938750}
 --- !u!114 &1007938750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2610,8 +2915,88 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.6
-  activeDuration: 2.5
---- !u!1001 &1051500802
+--- !u!1 &1054111046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 1304867512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1054111049 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 1304867512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1054111050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054111046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 1054111046}
+  spawnerController: {fileID: 1614807376}
+  spawnerIndex: 3
+--- !u!1 &1108470285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108470286}
+  - component: {fileID: 1108470288}
+  m_Layer: 0
+  m_Name: FruitSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1108470286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108470285}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.05, y: 14.54, z: -1.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 330900539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1108470288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108470285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.3
+--- !u!1001 &1113475912
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2670,14 +3055,12 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1186334818}
   m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
---- !u!4 &1051500803 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-  m_PrefabInstance: {fileID: 1051500802}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1108470285
+--- !u!1 &1169856475
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2685,52 +3068,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1108470286}
-  - component: {fileID: 1108470288}
-  - component: {fileID: 1108470287}
+  - component: {fileID: 1169856476}
+  - component: {fileID: 1169856478}
   m_Layer: 0
-  m_Name: FruitSpawner (1)
+  m_Name: FruitSpawner (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1108470286
+--- !u!4 &1169856476
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108470285}
+  m_GameObject: {fileID: 1169856475}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05, y: 14.54, z: -1.01}
+  m_LocalPosition: {x: -0.96, y: 14.55, z: -1.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 330900539}
+  m_Father: {fileID: 2129785898}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1108470287
+--- !u!114 &1169856478
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108470285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1108470288}
---- !u!114 &1108470288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108470285}
+  m_GameObject: {fileID: 1169856475}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
@@ -2747,8 +3115,32 @@ MonoBehaviour:
     probability: 0.2
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
-  spawnInterval: 0.3
-  activeDuration: 2.5
+  spawnInterval: 0.6
+--- !u!1 &1186334814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 1113475912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1186334817 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 1113475912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1186334818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186334814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 1186334814}
+  spawnerController: {fileID: 1614807376}
+  spawnerIndex: 2
 --- !u!1 &1201892114
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,7 +3151,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1201892115}
   - component: {fileID: 1201892117}
-  - component: {fileID: 1201892116}
   m_Layer: 0
   m_Name: FruitSpawner (4)
   m_TagString: Untagged
@@ -2782,20 +3173,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 470474987}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1201892116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201892114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1201892117}
 --- !u!114 &1201892117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2820,7 +3197,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.6
-  activeDuration: 2.5
 --- !u!1 &1212556286
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,7 +3207,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1212556287}
   - component: {fileID: 1212556289}
-  - component: {fileID: 1212556288}
   m_Layer: 0
   m_Name: FruitSpawner (3)
   m_TagString: Untagged
@@ -2854,20 +3229,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 330900539}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1212556288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212556286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1212556289}
 --- !u!114 &1212556289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2892,7 +3253,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.7
-  activeDuration: 2.5
 --- !u!1 &1232744118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,7 +3263,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1232744119}
   - component: {fileID: 1232744121}
-  - component: {fileID: 1232744120}
   m_Layer: 0
   m_Name: FruitSpawner
   m_TagString: Untagged
@@ -2926,20 +3285,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 470474987}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1232744120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232744118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1232744121}
 --- !u!114 &1232744121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2964,8 +3309,7 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.5
-  activeDuration: 2.5
---- !u!1 &1309928924
+--- !u!1 &1249912272
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2973,37 +3317,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1309928927}
-  - component: {fileID: 1309928926}
-  - component: {fileID: 1309928925}
+  - component: {fileID: 1249912273}
+  - component: {fileID: 1249912275}
   m_Layer: 0
-  m_Name: FruitSpawner
+  m_Name: FruitSpawner (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1309928925
+--- !u!4 &1249912273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249912272}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.05, y: 14.54, z: -1.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 891920236}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1249912275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309928924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1309928926}
---- !u!114 &1309928926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309928924}
+  m_GameObject: {fileID: 1249912272}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
@@ -3020,24 +3364,8 @@ MonoBehaviour:
     probability: 0.2
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
-  spawnInterval: 0.5
-  activeDuration: 2.5
---- !u!4 &1309928927
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309928924}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.53, y: 14.54, z: -0.96}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1421509292}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1326424490
+  spawnInterval: 0.3
+--- !u!1001 &1304867512
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3051,7 +3379,7 @@ PrefabInstance:
       objectReference: {fileID: 298623343}
     - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
       propertyPath: m_Name
-      value: Slime_02 (7)
+      value: Slime_02 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3096,23 +3424,204 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1054111050}
   m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
---- !u!4 &1326424491 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-  m_PrefabInstance: {fileID: 1326424490}
+--- !u!1 &1309928924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1348329201 stripped
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1309928927}
+  - component: {fileID: 1309928926}
+  m_Layer: 0
+  m_Name: FruitSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1309928926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309928924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.5
+--- !u!4 &1309928927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309928924}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.53, y: 14.54, z: -0.96}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1421509292}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1317864255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1317864256}
+  - component: {fileID: 1317864258}
+  m_Layer: 0
+  m_Name: FruitSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1317864256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317864255}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.53, y: 14.54, z: -0.96}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2129785898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1317864258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317864255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.5
+--- !u!1 &1319811976 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-  m_PrefabInstance: {fileID: 2144260034823366190}
+  m_PrefabInstance: {fileID: 2072840361}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1348329204 stripped
+--- !u!4 &1319811979 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-  m_PrefabInstance: {fileID: 2144260034823366190}
+  m_PrefabInstance: {fileID: 2072840361}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1319811980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319811976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 1319811976}
+  spawnerController: {fileID: 1614807376}
+  spawnerIndex: 1
+--- !u!1 &1323883985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1323883986}
+  - component: {fileID: 1323883988}
+  m_Layer: 0
+  m_Name: FruitSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1323883986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323883985}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.05, y: 14.54, z: -1.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 433086239}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1323883988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323883985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.3
 --- !u!1 &1349804818
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,7 +3716,429 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 40, y: -18.7, z: 0}
---- !u!1001 &1384726898
+--- !u!1 &1379227473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1379227474}
+  - component: {fileID: 1379227476}
+  m_Layer: 0
+  m_Name: FruitSpawner (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1379227474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379227473}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.12, y: 14.54, z: -1.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 433086239}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1379227476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379227473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.7
+--- !u!1 &1421509291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1421509292}
+  m_Layer: 0
+  m_Name: SpawnerGroup1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1421509292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421509291}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1309928927}
+  - {fileID: 309342998}
+  - {fileID: 656872935}
+  - {fileID: 837344053}
+  - {fileID: 1537270773}
+  m_Father: {fileID: 1614807375}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1432044477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432044478}
+  - component: {fileID: 1432044480}
+  m_Layer: 0
+  m_Name: FruitSpawner (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1432044478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432044477}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.96, y: 14.55, z: -1.03}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 433086239}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1432044480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432044477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.6
+--- !u!1 &1432927359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 2095714468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1432927362 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 2095714468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1432927363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432927359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 1432927359}
+  spawnerController: {fileID: 1614807376}
+  spawnerIndex: 0
+--- !u!1 &1498084055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1498084056}
+  - component: {fileID: 1498084058}
+  m_Layer: 0
+  m_Name: FruitSpawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1498084056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498084055}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.66, y: 14.54, z: -1.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 330900539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1498084058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498084055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.2
+--- !u!1 &1537270770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1537270773}
+  - component: {fileID: 1537270772}
+  m_Layer: 0
+  m_Name: FruitSpawner (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1537270772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537270770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.7
+--- !u!4 &1537270773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537270770}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.12, y: 14.54, z: -1.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1421509292}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1569766608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1569766609}
+  - component: {fileID: 1569766611}
+  m_Layer: 0
+  m_Name: FruitSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1569766609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569766608}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.05, y: 14.54, z: -1.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 95255120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1569766611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569766608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.3
+--- !u!1 &1583328070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 1654435723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1583328073 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 1654435723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1583328074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583328070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 1583328070}
+  spawnerController: {fileID: 1614807376}
+  spawnerIndex: 4
+--- !u!1 &1597611004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1597611005}
+  - component: {fileID: 1597611007}
+  m_Layer: 0
+  m_Name: FruitSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1597611005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597611004}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.05, y: 14.54, z: -1.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1872858374}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1597611007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597611004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.3
+--- !u!1001 &1600786367
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3221,7 +4152,7 @@ PrefabInstance:
       objectReference: {fileID: 298623343}
     - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
       propertyPath: m_Name
-      value: Slime_02 (5)
+      value: Slime_02 (6)
       objectReference: {fileID: 0}
     - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3266,14 +4197,12 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 728996070}
   m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
---- !u!4 &1384726899 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-  m_PrefabInstance: {fileID: 1384726898}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1421509291
+--- !u!1 &1614807374
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3281,250 +4210,63 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1421509292}
+  - component: {fileID: 1614807375}
+  - component: {fileID: 1614807376}
   m_Layer: 0
-  m_Name: SpawnerGroup1
+  m_Name: SpawnerBigGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1421509292
+--- !u!4 &1614807375
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421509291}
+  m_GameObject: {fileID: 1614807374}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1309928927}
-  - {fileID: 309342998}
-  - {fileID: 656872935}
-  - {fileID: 837344053}
-  - {fileID: 1537270773}
+  - {fileID: 1421509292}
+  - {fileID: 279627900}
+  - {fileID: 470474987}
+  - {fileID: 562551252}
+  - {fileID: 1872858374}
+  - {fileID: 330900539}
+  - {fileID: 95255120}
+  - {fileID: 2129785898}
+  - {fileID: 433086239}
+  - {fileID: 891920236}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1498084055
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1498084056}
-  - component: {fileID: 1498084058}
-  - component: {fileID: 1498084057}
-  m_Layer: 0
-  m_Name: FruitSpawner (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1498084056
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498084055}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.66, y: 14.54, z: -1.09}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 330900539}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1498084057
+--- !u!114 &1614807376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498084055}
+  m_GameObject: {fileID: 1614807374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Script: {fileID: 11500000, guid: b2f7c8bb416406a4eb82d2d75af318bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1498084058}
---- !u!114 &1498084058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498084055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fruitPrefabs:
-  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
-    probability: 0.2
-  spawnInterval: 0.2
-  activeDuration: 2.5
---- !u!1 &1537270770
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1537270773}
-  - component: {fileID: 1537270772}
-  - component: {fileID: 1537270771}
-  m_Layer: 0
-  m_Name: FruitSpawner (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1537270771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537270770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1537270772}
---- !u!114 &1537270772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537270770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fruitPrefabs:
-  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
-    probability: 0.2
-  spawnInterval: 0.7
-  activeDuration: 2.5
---- !u!4 &1537270773
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537270770}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.12, y: 14.54, z: -1.05}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1421509292}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1597611004
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1597611005}
-  - component: {fileID: 1597611007}
-  - component: {fileID: 1597611006}
-  m_Layer: 0
-  m_Name: FruitSpawner (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1597611005
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597611004}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05, y: 14.54, z: -1.01}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1872858374}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1597611006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597611004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1597611007}
---- !u!114 &1597611007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597611004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fruitPrefabs:
-  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
-    probability: 0.2
-  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
-    probability: 0.2
-  spawnInterval: 0.3
-  activeDuration: 2.5
+  spawners:
+  - {fileID: 1421509291}
+  - {fileID: 279627899}
+  - {fileID: 470474986}
+  - {fileID: 562551251}
+  - {fileID: 1872858373}
+  - {fileID: 330900538}
+  - {fileID: 95255119}
+  - {fileID: 2129785897}
+  - {fileID: 433086238}
+  - {fileID: 891920235}
 --- !u!1 &1622248858
 GameObject:
   m_ObjectHideFlags: 0
@@ -3653,7 +4395,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1634928567}
   - component: {fileID: 1634928569}
-  - component: {fileID: 1634928568}
   m_Layer: 0
   m_Name: FruitSpawner
   m_TagString: Untagged
@@ -3676,20 +4417,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 330900539}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1634928568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634928566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1634928569}
 --- !u!114 &1634928569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3714,8 +4441,7 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.5
-  activeDuration: 2.5
---- !u!1001 &1671424753
+--- !u!1001 &1654435723
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3729,7 +4455,7 @@ PrefabInstance:
       objectReference: {fileID: 298623343}
     - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
       propertyPath: m_Name
-      value: Slime_02 (6)
+      value: Slime_02 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3774,18 +4500,97 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1583328074}
   m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
---- !u!4 &1671424754 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-  m_PrefabInstance: {fileID: 1671424753}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1704394419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6398883658879040003, guid: 39150f232d38a5541a218c2bea88381e, type: 3}
   m_PrefabInstance: {fileID: 810153861}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1706403047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1706403048}
+  - component: {fileID: 1706403050}
+  m_Layer: 0
+  m_Name: FruitSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1706403048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706403047}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.53, y: 14.54, z: -0.96}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 95255120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1706403050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706403047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.5
+--- !u!1 &1752472236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 567395460}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1752472239 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+  m_PrefabInstance: {fileID: 567395460}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1752472240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752472236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloon: {fileID: 1752472236}
+  spawnerController: {fileID: 1614807376}
+  spawnerIndex: 7
 --- !u!1 &1752528370
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,6 +4693,62 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1782024882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1782024883}
+  - component: {fileID: 1782024885}
+  m_Layer: 0
+  m_Name: FruitSpawner (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1782024883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782024882}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.12, y: 14.54, z: -1.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 95255120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1782024885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782024882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.7
 --- !u!1 &1853153534
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,7 +4759,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1853153535}
   - component: {fileID: 1853153537}
-  - component: {fileID: 1853153536}
   m_Layer: 0
   m_Name: FruitSpawner (2)
   m_TagString: Untagged
@@ -3921,20 +4781,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 279627900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1853153536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853153534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1853153537}
 --- !u!114 &1853153537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3959,7 +4805,6 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.2
-  activeDuration: 2.5
 --- !u!1 &1872858373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3984,7 +4829,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872858373}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3994,7 +4839,7 @@ Transform:
   - {fileID: 1597611005}
   - {fileID: 638481981}
   - {fileID: 573395839}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1614807375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1892017228
 GameObject:
@@ -4051,6 +4896,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1892230985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1892230986}
+  - component: {fileID: 1892230988}
+  m_Layer: 0
+  m_Name: FruitSpawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1892230986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892230985}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.66, y: 14.54, z: -1.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 891920236}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1892230988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892230985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.2
 --- !u!1 &1903935031
 GameObject:
   m_ObjectHideFlags: 0
@@ -4152,6 +5053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1910330273}
+  - component: {fileID: 1910330274}
   m_Layer: 0
   m_Name: SlimeGroup
   m_TagString: Untagged
@@ -4172,18 +5074,43 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1348329204}
-  - {fileID: 641135989}
-  - {fileID: 1051500803}
-  - {fileID: 586686415}
-  - {fileID: 281607821}
-  - {fileID: 1384726899}
-  - {fileID: 1671424754}
-  - {fileID: 1326424491}
-  - {fileID: 2105015962}
-  - {fileID: 287572081}
+  - {fileID: 1432927362}
+  - {fileID: 1319811979}
+  - {fileID: 1186334817}
+  - {fileID: 1054111049}
+  - {fileID: 1583328073}
+  - {fileID: 827102189}
+  - {fileID: 728996069}
+  - {fileID: 1752472239}
+  - {fileID: 416417562}
+  - {fileID: 71380726}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1910330274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910330272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9af96afe18c914c91051ee49ee8d95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloons:
+  - {fileID: 1432927359}
+  - {fileID: 1319811976}
+  - {fileID: 1186334814}
+  - {fileID: 1054111046}
+  - {fileID: 1583328070}
+  - {fileID: 827102186}
+  - {fileID: 728996066}
+  - {fileID: 1752472236}
+  - {fileID: 416417559}
+  - {fileID: 71380723}
+  spawnerController: {fileID: 1614807376}
+  activationDuration: 2.5
 --- !u!1 &1921000526
 GameObject:
   m_ObjectHideFlags: 0
@@ -4273,7 +5200,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1961754341}
   - component: {fileID: 1961754343}
-  - component: {fileID: 1961754342}
   m_Layer: 0
   m_Name: FruitSpawner
   m_TagString: Untagged
@@ -4296,20 +5222,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1872858374}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1961754342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961754340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1961754343}
 --- !u!114 &1961754343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4334,7 +5246,62 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.5
-  activeDuration: 2.5
+--- !u!1 &1988081779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1988081780}
+  - component: {fileID: 1988081782}
+  m_Layer: 0
+  m_Name: FruitSpawner (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1988081780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988081779}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.12, y: 14.54, z: -1.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2129785898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1988081782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988081779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.7
 --- !u!1 &1994615832
 GameObject:
   m_ObjectHideFlags: 0
@@ -4345,7 +5312,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1994615833}
   - component: {fileID: 1994615835}
-  - component: {fileID: 1994615834}
   m_Layer: 0
   m_Name: FruitSpawner (1)
   m_TagString: Untagged
@@ -4368,20 +5334,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 279627900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1994615834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1994615832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb182340f288fd9428ef818a81a43a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloon: {fileID: 1348329201}
-  fruitSpawner: {fileID: 1994615835}
 --- !u!114 &1994615835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4406,7 +5358,182 @@ MonoBehaviour:
   - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
     probability: 0.2
   spawnInterval: 0.3
-  activeDuration: 2.5
+--- !u!1 &2041994154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2041994155}
+  - component: {fileID: 2041994157}
+  m_Layer: 0
+  m_Name: FruitSpawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2041994155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041994154}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.66, y: 14.54, z: -1.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2129785898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2041994157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041994154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.2
+--- !u!1001 &2072840361
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1910330273}
+    m_Modifications:
+    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 298623343}
+    - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_Name
+      value: Slime_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.32478702
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6724199
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.26087028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1319811980}
+  m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+--- !u!1 &2074266720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2074266721}
+  - component: {fileID: 2074266723}
+  m_Layer: 0
+  m_Name: FruitSpawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2074266721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074266720}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.66, y: 14.54, z: -1.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 95255120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2074266723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074266720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a24290c668c0498c69f7ca3179bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefabs:
+  - prefab: {fileID: 3467486607191550568, guid: 7edb12de7b6d7474590a37a9a252d8b2, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 6993486924077104137, guid: 8fe705b6fc095c14b86a442961c8922b, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 875511110405804541, guid: 16f32b1c1b6bb1f42a1839a875046baa, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8850757551245356594, guid: fe55437deda1e704fbd84be5a37f59ac, type: 3}
+    probability: 0.2
+  - prefab: {fileID: 8420789742209032967, guid: d3a73d391a991eb46b143020ee3bac41, type: 3}
+    probability: 0.2
+  spawnInterval: 0.2
 --- !u!1 &2087030387
 GameObject:
   m_ObjectHideFlags: 0
@@ -4475,73 +5602,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2105015961
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1910330273}
-    m_Modifications:
-    - target: {fileID: 1374312943397061712, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 298623343}
-    - target: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_Name
-      value: Slime_02 (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.32478702
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.6724199
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.26087028
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
---- !u!4 &2105015962 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4083797867577301878, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
-  m_PrefabInstance: {fileID: 2105015961}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2144260034823366190
+--- !u!1001 &2095714468
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -4600,8 +5661,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3740028567199744460, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1432927363}
   m_SourcePrefab: {fileID: 100100000, guid: d3e2301777c5865438e558fb7d6544f6, type: 3}
+--- !u!1 &2129785897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2129785898}
+  m_Layer: 0
+  m_Name: SpawnerGroup8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2129785898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129785897}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1317864256}
+  - {fileID: 1169856476}
+  - {fileID: 882605534}
+  - {fileID: 2041994155}
+  - {fileID: 1988081780}
+  m_Father: {fileID: 1614807375}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &9037700822288996219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4772,12 +5872,6 @@ SceneRoots:
   - {fileID: 1349804820}
   - {fileID: 9037700822288996219}
   - {fileID: 810153861}
-  - {fileID: 1421509292}
-  - {fileID: 279627900}
-  - {fileID: 470474987}
-  - {fileID: 562551252}
-  - {fileID: 1872858374}
-  - {fileID: 330900539}
   - {fileID: 238090545}
   - {fileID: 872903805}
   - {fileID: 700649165}
@@ -4786,4 +5880,5 @@ SceneRoots:
   - {fileID: 1892017230}
   - {fileID: 601743928}
   - {fileID: 1622248863}
+  - {fileID: 1614807375}
   - {fileID: 1910330273}

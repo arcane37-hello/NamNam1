@@ -17,30 +17,27 @@ public class FruitSpawner : MonoBehaviour
 
     // 프리팹을 소환할 주기를 설정하는 public 변수
     public float spawnInterval = 2.0f; // 예: 2초마다 소환
-    public float activeDuration = 3.0f; // 활성화 시간 (3초)
 
     // 내부 타이머 변수
     private float timer;
-    private bool isActive = false;
-    private bool shouldSpawn = false;
+
+    private void Start()
+    {
+        // 타이머를 초기화합니다.
+        timer = spawnInterval;
+    }
 
     private void Update()
     {
-        if (isActive)
-        {
-            if (shouldSpawn)
-            {
-                // 타이머를 감소시킵니다.
-                timer -= Time.deltaTime;
+        // 타이머를 감소시킵니다.
+        timer -= Time.deltaTime;
 
-                // 타이머가 0 이하일 때 소환을 수행합니다.
-                if (timer <= 0f)
-                {
-                    SpawnFruit();
-                    // 타이머를 리셋합니다.
-                    timer = spawnInterval;
-                }
-            }
+        // 타이머가 0 이하일 때 소환을 수행합니다.
+        if (timer <= 0f)
+        {
+            SpawnFruit();
+            // 타이머를 리셋합니다.
+            timer = spawnInterval;
         }
     }
 
@@ -80,28 +77,5 @@ public class FruitSpawner : MonoBehaviour
         }
 
         return null; // 기본값으로 null 반환 (확률이 0인 경우를 대비)
-    }
-
-    // 활성화 상태를 설정하는 메서드
-    public void ActivateForDuration()
-    {
-        if (!isActive)
-        {
-            isActive = true;
-            shouldSpawn = true;
-            timer = spawnInterval; // 타이머를 초기화합니다.
-            StartCoroutine(DeactivateAfterDuration(activeDuration));
-        }
-    }
-
-    private IEnumerator DeactivateAfterDuration(float duration)
-    {
-        // 활성화 상태를 유지합니다.
-        yield return new WaitForSeconds(duration);
-
-        // 소환 기능을 중지하고 비활성화
-        shouldSpawn = false;
-        isActive = false;
-        gameObject.SetActive(false);
     }
 }
