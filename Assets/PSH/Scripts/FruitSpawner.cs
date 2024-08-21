@@ -1,11 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+
+[System.Serializable]
+public class FruitPrefabProbability
+{
+    public GameObject prefab;
+    public float probability; // 소환 확률 (0.0f ~ 1.0f)
+}
 
 public class FruitSpawner : MonoBehaviour
 {
-    // 소환할 프리팹을 지정하는 public 변수
-    public GameObject fruitPrefab;
+    // 프리팹과 그에 대한 확률을 저장하는 배열
+    public FruitPrefabProbability[] fruitPrefabs;
 
     // 프리팹을 소환할 주기를 설정하는 public 변수
     public float spawnInterval = 2.0f; // 예: 2초마다 소환
@@ -38,18 +46,43 @@ public class FruitSpawner : MonoBehaviour
 
     private void SpawnFruit()
     {
-        // 현재 오브젝트의 위치에 프리팹을 소환합니다.
-        if (fruitPrefab != null)
+        // 소환할 프리팹을 확률에 따라 선택합니다.
+        GameObject selectedPrefab = GetRandomFruitPrefab();
+
+        if (selectedPrefab != null)
         {
-            Instantiate(fruitPrefab, transform.position, Quaternion.identity);
+            Instantiate(selectedPrefab, transform.position, Quaternion.identity);
         }
         else
         {
-            Debug.LogWarning("Fruit Prefab is not assigned in the FruitSpawner script.");
+            Debug.LogWarning("No fruit prefab selected.");
         }
     }
 
-    // 풍선이 비활성화되었을 때 호출되는 메서드
+    private GameObject GetRandomFruitPrefab()
+    {
+        float totalProbability = 0f;
+        foreach (var fruit in fruitPrefabs)
+        {
+            totalProbability += fruit.probability;
+        }
+
+        float randomValue = Random.value * totalProbability;
+        float cumulativeProbability = 0f;
+
+        foreach (var fruit in fruitPrefabs)
+        {
+            cumulativeProbability += fruit.probability;
+            if (randomValue <= cumulativeProbability)
+            {
+                return fruit.prefab;
+            }
+        }
+
+        return null; // 기본값으로 null 반환 (확률이 0인 경우를 대비)
+    }
+
+    // 활성화 상태를 설정하는 메서드
     public void ActivateForDuration()
     {
         if (!isActive)
@@ -63,7 +96,7 @@ public class FruitSpawner : MonoBehaviour
 
     private IEnumerator DeactivateAfterDuration(float duration)
     {
-        // 3초 동안 활성화 상태 유지
+        // 활성화 상태를 유지합니다.
         yield return new WaitForSeconds(duration);
 
         // 소환 기능을 중지하고 비활성화
