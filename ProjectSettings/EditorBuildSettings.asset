@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01_Scenes/TestScenes/SignUp/SignUp.unity
     guid: aa7a1bbc41919b4469500b21e14d407f
+  - enabled: 1
+    path: Assets/01_Scenes/TestScenes/MyRefrigerator/MyRefrigerator.unity
+    guid: f53c844959ae19a4eb27c2e8a5c50cdb
   m_configObjects: {}
